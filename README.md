@@ -11,3 +11,5 @@ Covers:
 - AI companions vs dating apps — honest comparison
 
 Static HTML, no tracking, no account needed. Some outbound links are affiliate links (disclosed on every page).
+
+Companion site: cancellation guides for Tinder, Bumble, Hinge, Badoo — https://dating-cancel-guide.vercel.app
