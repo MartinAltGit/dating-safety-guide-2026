@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://datingsafetyguide2026.vercel.app/sitemap.xml
