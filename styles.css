@@ -1,0 +1,159 @@
+/* ============================================================
+   Dating Safety Guide — site.css
+   Mobile-first informational content site.
+   Design tokens, pill navigation, prose, cards, tables, CTA.
+   ============================================================ */
+
+:root{
+  --bg:#0b0e14;
+  --surface:#12161f;
+  --surface-2:#171d2a;
+  --border:#252d3d;
+  --border-soft:#1e2533;
+  --text:#eef0f5;
+  --muted:#9aa4b7;
+  --accent:#5b8cff;
+  --accent-hover:#4a7bf5;
+  --accent-soft:rgba(91,140,255,.13);
+  --ok:#34d08c;
+
+  --radius-sm:10px;
+  --radius:16px;
+  --radius-lg:22px;
+  --pill:999px;
+
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-head:"Inter",system-ui,-apple-system,sans-serif;
+
+  --wrap:740px;
+  --space:clamp(20px,4vw,32px);
+  --shadow:0 10px 30px -12px rgba(0,0,0,.6);
+}
+
+/* ---------- base ---------- */
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--font-head);color:#fff;line-height:1.22;font-weight:700;letter-spacing:-.01em}
+h1{font-size:clamp(1.7rem,5vw,2.25rem);margin:6px 0 10px}
+h2{font-size:clamp(1.3rem,4vw,1.55rem);margin:32px 0 12px;padding-top:8px}
+h3{font-size:1.12rem;color:#d7dfff;margin:20px 0 8px}
+p{margin:12px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+ul,ol{padding-left:22px;margin:12px 0}
+li{margin:7px 0;line-height:1.65}
+strong{color:#fff}
+.small{font-size:.85rem;color:var(--muted)}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--space) 48px}
+
+/* ---------- header + pill nav ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,14,20,.86);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border-soft);
+}
+.header-inner{max-width:900px;margin:0 auto;padding:10px var(--space)}
+.brand{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-head);font-weight:700;font-size:1rem;color:#fff;
+  letter-spacing:-.01em;margin:2px 4px 8px;
+}
+.brand:hover{text-decoration:none}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.pillnav{
+  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;
+  -ms-overflow-style:none;padding-bottom:2px;margin:0 -4px;
+}
+.pillnav::-webkit-scrollbar{display:none}
+.pill{
+  flex:0 0 auto;white-space:nowrap;
+  padding:8px 16px;border-radius:var(--pill);
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--muted);
+  font-size:.92rem;font-weight:500;
+  transition:all .15s ease;
+}
+.pill:hover{color:#fff;border-color:#3a455c;text-decoration:none;transform:translateY(-1px)}
+.pill[aria-current="page"]{
+  background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;
+  box-shadow:0 4px 14px -4px rgba(91,140,255,.55);
+}
+
+/* ---------- prose / cards ---------- */
+.lede{font-size:1.08rem;color:#c7cde0;margin:14px 0 20px}
+.badge{
+  display:inline-block;background:var(--accent-soft);color:var(--accent);
+  font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:var(--pill);
+  letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px;
+}
+.card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);padding:20px 22px;margin:16px 0;
+  box-shadow:var(--shadow);
+}
+.card h3{margin-top:0}
+.callout{
+  background:var(--accent-soft);border:1px solid rgba(91,140,255,.25);
+  border-radius:var(--radius);padding:16px 18px;margin:16px 0;
+}
+.callout h3{margin-top:0;color:var(--accent)}
+
+/* CTA */
+.cta{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--accent);color:#fff;text-align:center;
+  padding:16px 20px;border-radius:14px;font-weight:600;font-size:1rem;
+  text-decoration:none;margin:24px 0;box-shadow:0 10px 26px -10px rgba(91,140,255,.7);
+  transition:background .15s ease, transform .15s ease;
+}
+.cta:hover{background:var(--accent-hover);text-decoration:none;transform:translateY(-1px)}
+.cta:active{transform:translateY(0)}
+
+/* links list (index) */
+.linkcard{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin:10px 0;text-decoration:none;transition:all .15s ease}
+.linkcard:hover{border-color:#3a455c;text-decoration:none;transform:translateX(3px)}
+.linkcard strong{display:block;color:#fff}
+.linkcard span{color:var(--muted);font-size:.9rem}
+
+/* ---------- table ---------- */
+.tbl-wrap{overflow-x:auto;margin:14px 0;border:1px solid var(--border);border-radius:var(--radius)}
+table{width:100%;border-collapse:collapse;min-width:520px;font-size:.95rem}
+th,td{border-bottom:1px solid var(--border-soft);padding:12px 14px;text-align:left}
+th{background:var(--surface-2);color:#d7dfff;font-weight:600}
+tr:last-child td{border-bottom:none}
+table a{color:var(--accent)}
+
+/* ---------- footer ---------- */
+footer{margin-top:44px;padding:22px 0;border-top:1px solid var(--border-soft);color:var(--muted);font-size:.85rem}
+footer p{margin:6px 0}
+
+/* ---------- age gate ---------- */
+#agegate{position:fixed;inset:0;background:rgba(8,10,16,.97);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+#agegate .box{max-width:420px;width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;text-align:center;box-shadow:var(--shadow)}
+#agegate h2{margin-top:0}
+#agegate p{color:var(--muted)}
+.age-btn{display:block;width:100%;background:var(--accent);color:#fff;border:0;padding:13px;border-radius:var(--radius-sm);font-size:1rem;font-weight:600;cursor:pointer;margin-top:8px}
+.age-btn:hover{background:var(--accent-hover)}
+.age-btn.leave{background:var(--surface-2);border:1px solid var(--border);color:var(--muted);margin-top:8px}
+.age-btn.leave:hover{background:#1d2433}
+
+/* ---------- back to top ---------- */
+.totop{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.88rem;margin-top:16px}
+.totop:hover{color:var(--accent);text-decoration:none}
+
+@media (min-width:640px){
+  .header-inner{padding:12px var(--space)}
+  .pillnav{margin:0}
+}
