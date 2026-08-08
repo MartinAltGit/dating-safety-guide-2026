@@ -5,51 +5,43 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Dating App Privacy Checklist: Control What They Collect</title>
 <meta name="description" content="What dating apps collect (location, photos, messages, payment data) and concrete settings to reduce exposure. 18+ educational guide.">
+<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://dating-safety-guide.vercel.app/privacy.html">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,-apple-system,sans-serif;background:#0f1117;color:#e8e6e3;line-height:1.7}
-.wrap{max-width:760px;margin:0 auto;padding:24px}
-header{border-bottom:1px solid #2a2d3a;padding-bottom:16px;margin-bottom:24px}
-h1{font-size:1.9rem;color:#fff;margin:8px 0}
-h2{font-size:1.35rem;color:#fff;margin:28px 0 12px}
-h3{font-size:1.1rem;color:#cfd8ff;margin:20px 0 8px}
-a{color:#7aa2ff}
-.badge{display:inline-block;background:#2a2d3a;color:#9aa3b8;font-size:.8rem;padding:3px 10px;border-radius:12px}
-.card{background:#171a24;border:1px solid #2a2d3a;border-radius:12px;padding:20px;margin:16px 0}
-.cta{display:block;background:#4f7cff;color:#fff;text-align:center;padding:16px;border-radius:12px;font-weight:600;text-decoration:none;margin:24px 0}
-.cta:hover{background:#3d66e0}
-ul,ol{padding-left:24px;margin:10px 0}
-li{margin:6px 0}
-.small{font-size:.85rem;color:#9aa3b8}
-nav a{margin-right:16px;font-size:.95rem}
-footer{margin-top:40px;padding-top:16px;border-top:1px solid #2a2d3a;color:#9aa3b8;font-size:.85rem}
-#agegate{position:fixed;inset:0;background:rgba(10,12,18,.97);display:flex;align-items:center;justify-content:center;z-index:99}
-#agegate .box{max-width:420px;background:#171a24;border:1px solid #2a2d3a;border-radius:16px;padding:32px;text-align:center}
-#agegate button{background:#4f7cff;color:#fff;border:0;padding:12px 28px;border-radius:10px;font-size:1rem;cursor:pointer;margin:6px}
-#agegate .leave{background:#2a2d3a}
-table{width:100%;border-collapse:collapse;margin:12px 0}
-th,td{border:1px solid #2a2d3a;padding:10px;text-align:left;font-size:.95rem}
-th{background:#171a24;color:#cfd8ff}
-</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Dating App Privacy Checklist: Control What They Collect", "description": "What dating apps collect (location, photos, messages, payment data) and concrete settings to reduce exposure. 18+ educational guide.", "url": "https://dating-safety-guide.vercel.app/privacy.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://dating-safety-guide.vercel.app/privacy.html"}, "author": {"@type": "Organization", "name": "Dating Safety Guide"}, "publisher": {"@type": "Organization", "name": "Dating Safety Guide"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dating-safety-guide.vercel.app/index.html"}, {"@type": "ListItem", "position": 2, "name": "Privacy", "item": "https://dating-safety-guide.vercel.app/privacy.html"}]}</script>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dating Safety Guide">
+<meta property="og:title" content="Dating App Privacy Checklist: Control What They Collect">
+<meta property="og:description" content="What dating apps collect (location, photos, messages, payment data) and concrete settings to reduce exposure. 18+ educational guide.">
+<meta property="og:url" content="https://dating-safety-guide.vercel.app/privacy.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dating App Privacy Checklist: Control What They Collect">
+<meta name="twitter:description" content="What dating apps collect (location, photos, messages, payment data) and concrete settings to reduce exposure. 18+ educational guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <script>window.va=window.va||function(){(va.q=va.q||[]).push(arguments)};</script>
 <script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
 </head>
 <body>
-<div id="agegate"><div class="box">
-<h2 style="margin-top:0">18+ Content</h2>
+
+<div id="agegate" role="dialog" aria-modal="true" aria-labelledby="agegate-title"><div class="box">
+<h2 id="agegate-title" style="margin-top:0">18+ Content</h2>
 <p>This site covers adult dating services and may contain links to partner offers. You must be 18 or older to continue.</p>
-<br><button onclick="confirmAge()">I am 18 or older</button>
-<button class="leave" onclick="location.href='https://www.google.com'">Leave</button>
+<button class="age-btn" onclick="confirmAge()">I am 18 or older</button>
+<button class="age-btn leave" onclick="location.href='https://www.google.com'">Leave</button>
 </div></div>
-<div class="wrap">
-<header>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="index.html"><span class="dot"></span>Dating Safety Guide</a>
+<nav class="pillnav" aria-label="Sections"><a class="pill" href="index.html">Home</a><a class="pill" href="pricing.html">Pricing</a><a class="pill" href="refund.html">Refunds</a><a class="pill" href="red-flags.html">Red Flags</a><a class="pill" href="privacy.html" aria-current="page">Privacy</a><a class="pill" href="ai-companions.html">AI Companions</a></nav>
+</div>
+</header>
+<main class="wrap">
+<article>
 <span class="badge">18+ educational guide</span>
 <h1>Dating App Privacy Checklist: Control What They Collect</h1>
-<nav>
-<a href="index.html">Home</a><a href="pricing.html">Pricing</a><a href="privacy.html">Privacy</a><a href="red-flags.html">Red Flags</a><a href="ai-companions.html">AI Companions</a>
-</nav>
-</header>
 <h2>What dating services typically collect</h2>
 <ul>
 <li>Precise or approximate location, often continuously while the app is open</li>
@@ -68,11 +60,15 @@ th{background:#171a24;color:#cfd8ff}
 </ol></div>
 <a class="cta" href="/go?src=privacy" rel="sponsored nofollow noopener" target="_blank">Compare services in your region (18+, partner link)</a>
 <p class="small">Affiliate link — we may earn a commission on qualifying signups.</p>
+<div class="card more-guides" style="margin-top:28px"><h3>More guides</h3><a class="linkcard" href="index.html"><strong>Home</strong></a><a class="linkcard" href="pricing.html"><strong>Pricing</strong></a><a class="linkcard" href="refund.html"><strong>Refunds</strong></a><a class="linkcard" href="red-flags.html"><strong>Red Flags</strong></a><a class="linkcard" href="ai-companions.html"><strong>AI Companions</strong></a></div>
+<p><a class="totop" href="#top">↑ Back to top</a></p>
+</article>
+</main>
 <footer>
-<p>Affiliate disclosure: some links on this site are affiliate links. If you sign up through them we may earn a commission, at no extra cost to you. We do not guarantee matches, results, or outcomes on any dating service. Always review each service's own terms, pricing, and cancellation policy before paying.</p>
-<p>Last updated: August 2026.</p>
-</footer>
+<div class="wrap" style="padding-bottom:0">
+<p>Affiliate disclosure: some links on this site are affiliate links. If you sign up through them we may earn a commission, at no extra cost to you. We do not guarantee matches, results, or outcomes on any dating service. Always review each service's own terms, pricing, and cancellation policy before paying.</p><p>Last updated: August 2026.</p>
 </div>
+</footer>
 
 <script>
 (function(){

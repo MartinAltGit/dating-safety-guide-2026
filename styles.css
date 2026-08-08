@@ -32,7 +32,7 @@
 
 /* ---------- base ---------- */
 *{margin:0;padding:0;box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
 body{
   font-family:var(--font);
   background:var(--bg);
