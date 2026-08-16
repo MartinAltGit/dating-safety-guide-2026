@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Video</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0b0b0f; color:#f2f2f4; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; -webkit-font-smoothing:antialiased; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+  .card { max-width:400px; width:100%; text-align:center; }
+  .icon { font-size:44px; margin-bottom:16px; }
+  .card h1 { font-size:24px; font-weight:700; margin-bottom:12px; }
+  .card p { color:#8b8b96; font-size:14px; line-height:1.6; margin-bottom:26px; }
+  .btn { width:100%; display:block; padding:15px; border-radius:12px; font-size:16px; font-weight:700; text-decoration:none; text-align:center; border:none; cursor:pointer; margin-bottom:10px; }
+  .btn-primary { background:#e5484d; color:#fff; }
+  .btn-danger { background:#6c5ce7; color:#fff; }
+  .btn-secondary { background:#1c1c24; color:#8b8b96; border:1px solid #2a2a33; }
+  .step { display:none; }
+  .step.active { display:block; }
+  .mini { font-size:12px; color:#5a5a64; margin-top:18px; }
+</style>
+</head>
+<body>
+
+<!-- STEP 1: Age gate -->
+<div class="card step active" id="s1">
+  <div class="icon">🔞</div>
+  <h1>Are you 18 or older?</h1>
+  <p>This page contains material intended only for adults aged 18+ and above.</p>
+  <button class="btn btn-primary" id="ageYes">Yes, I am 18 or older</button>
+  <a class="btn btn-secondary" href="https://www.datesafelyguide.com" rel="nofollow">No, take me back</a>
+</div>
+
+<!-- STEP 2: Explicit content warning -->
+<div class="card step" id="s2">
+  <div class="icon">⚠️</div>
+  <h1>Explicit content warning</h1>
+  <p>The next page contains explicit sexual content. By continuing you confirm you are of legal age in your location.</p>
+  <button class="btn btn-danger" id="warnProceed">I understand — Continue</button>
+  <button class="btn btn-secondary" id="warnBack">Take me back</button>
+</div>
+
+<!-- STEP 3: Affiliate redirect note -->
+<div class="card step" id="s3">
+  <div class="icon">👀</div>
+  <h1>Loading your video…</h1>
+  <p>Taking you to your full video. Thank you for confirming.</p>
+  <a class="btn btn-primary" href="https://t.camsk5.com/163898/3664/0?target=domainredirects&po=6533&aff_sub5=SF_006OG000004lmDN" id="finalCta" rel="noopener nofollow sponsored">Continue to full video</a>
+</div>
+
+<script>
+  var step = function(n){
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.remove('active'); });
+    document.getElementById('s'+n).classList.add('active');
+  };
+  document.getElementById('ageYes').addEventListener('click', function(){
+    if (localStorage.getItem('fv18') !== '1') { localStorage.setItem('fv18','1'); }
+    step(2);
+  });
+  document.getElementById('warnProceed').addEventListener('click', function(){
+    step(3);
+    window.location.href = document.getElementById('finalCta').getAttribute('href');
+  });
+  document.getElementById('warnBack').addEventListener('click', function(){ step(1); });
+</script>
+
+</body>
+</html>
