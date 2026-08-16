@@ -1,0 +1,21 @@
+{
+  "name": "Dating Safety Guide",
+  "short_name": "DatingSafety",
+  "description": "Independent 18+ guide: check pricing, privacy, cancellation, and red flags before paying for any dating app or AI companion service.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0e14",
+  "theme_color": "#0b0e14",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://datingsafetyguide2026.vercel.app/sitemap.xml
+Disallow: /api/
+
+Sitemap: https://www.datesafelyguide.com/sitemap.xml
