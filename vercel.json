@@ -1,12 +1,20 @@
 {
   "rewrites": [
+    { "source": "/go", "destination": "/api/go" },
+    { "source": "/pb", "destination": "/api/pb" }
+  ],
+  "redirects": [
+    { "source": "/safety/:path*", "destination": "/:path*", "permanent": true },
+    { "source": "/safety", "destination": "/", "permanent": true },
+    { "source": "/favicon-32x32.png", "destination": "/favicon-32.png", "permanent": true },
+    { "source": "/favicon-16x16.png", "destination": "/favicon-32.png", "permanent": true },
+    { "source": "/favicon.ico", "destination": "/favicon.svg", "permanent": false },
+    { "source": "/og-image.png", "destination": "/og-image.jpg", "permanent": true }
+  ],
+  "headers": [
     {
-      "source": "/go",
-      "destination": "/api/go"
-    },
-    {
-      "source": "/pb",
-      "destination": "/api/pb"
+      "source": "/(.*)\\.(css|js|svg|png|jpg|jpeg|webp|webmanifest)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
     }
   ]
 }
