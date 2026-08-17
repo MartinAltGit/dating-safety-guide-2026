@@ -1,11 +1,11 @@
 {
   "rewrites": [
+    { "source": "/safety/:path*", "destination": "/:path*" },
+    { "source": "/safety", "destination": "/index.html" },
     { "source": "/go", "destination": "/api/go" },
     { "source": "/pb", "destination": "/api/pb" }
   ],
   "redirects": [
-    { "source": "/safety/:path*", "destination": "/:path*", "permanent": true },
-    { "source": "/safety", "destination": "/", "permanent": true },
     { "source": "/favicon-32x32.png", "destination": "/favicon-32.png", "permanent": true },
     { "source": "/favicon-16x16.png", "destination": "/favicon-32.png", "permanent": true },
     { "source": "/favicon.ico", "destination": "/favicon.svg", "permanent": false },
