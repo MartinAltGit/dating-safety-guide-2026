@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 32" role="img" aria-label="Date Safely Guide">
+  <rect width="32" height="32" rx="7" fill="#b5461f"/>
+  <path fill="#fffdf8" d="M10 6.4h12v17.9l-6-3.4-6 3.4V6.4z"/>
+  <path fill="#b5461f" d="M13.1 14.05 15.25 16.35 20.2 10.7l1.2 1.05-6.15 7.05-3.45-3.55 1.3-1.2z"/>
+  <text x="42" y="21.5" fill="#1c1814" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Times New Roman', serif" font-size="17" font-weight="650" letter-spacing="-0.03em">Date Safely</text>
+  <text x="148" y="20.2" fill="#6a635a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="0.14em">GUIDE</text>
+</svg>

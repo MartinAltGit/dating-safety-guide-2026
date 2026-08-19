@@ -9,7 +9,18 @@
     { "source": "/favicon-32x32.png", "destination": "/favicon-32.png", "permanent": true },
     { "source": "/favicon-16x16.png", "destination": "/favicon-32.png", "permanent": true },
     { "source": "/favicon.ico", "destination": "/favicon.svg", "permanent": false },
-    { "source": "/og-image.png", "destination": "/og-image.jpg", "permanent": true }
+    { "source": "/og-image.png", "destination": "/og-image.jpg", "permanent": true },
+    { "source": "/cancel", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
+    { "source": "/cancel/", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
+    { "source": "/cancel/index.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
+    { "source": "/cancel/tinder.html", "destination": "/how-to-cancel-tinder.html", "permanent": true },
+    { "source": "/cancel/bumble.html", "destination": "/how-to-cancel-bumble.html", "permanent": true },
+    { "source": "/cancel/hinge.html", "destination": "/how-to-cancel-hinge.html", "permanent": true },
+    { "source": "/cancel/refund.html", "destination": "/refund.html", "permanent": true },
+    { "source": "/cancel/pricing.html", "destination": "/pricing.html", "permanent": true },
+    { "source": "/cancel/faq.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
+    { "source": "/cancel/stop-charges.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
+    { "source": "/cancel/badoo.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true }
   ],
   "headers": [
     {

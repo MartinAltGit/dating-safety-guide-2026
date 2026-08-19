@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /fullvideo/
 
 Sitemap: https://www.datesafelyguide.com/sitemap.xml
