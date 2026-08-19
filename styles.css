@@ -20,7 +20,7 @@
     0 0 0 1px oklch(0 0 0 / 0.08),
     0 12px 32px -12px oklch(0 0 0 / 0.16);
   --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --wrap: 720px;
   --wrap-wide: 1100px;
   --gutter: 24px;
@@ -116,6 +116,50 @@ strong { color: var(--ink); font-weight: 650; }
 
 .prose {
   max-width: 40rem;
+}
+
+/* Articles: one reading column. Homepage/blog index stay on wrap-wide. */
+main.page.wrap {
+  max-width: 42rem;
+  padding-bottom: 80px;
+}
+
+.page article h1 {
+  font-size: clamp(1.85rem, 4.4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.page article > p,
+.page article .lede {
+  line-height: 1.65;
+}
+
+.page article > p {
+  margin: 0 0 1em;
+}
+
+.page article > h2 {
+  margin-top: 2.1em;
+  margin-bottom: 0.55em;
+  font-size: clamp(1.28rem, 2.4vw, 1.55rem);
+  line-height: 1.25;
+}
+
+.page article .steps {
+  grid-template-columns: 1fr;
+}
+
+.page article .card:not(.links) {
+  display: block;
+  padding: 18px 0;
+}
+
+.page article .card:not(.links) > * + * {
+  grid-column: auto;
+}
+
+.page article .article-hero img {
+  max-height: 280px;
 }
 
 /* ——— Floating pill nav (Pankitrejd pattern) ——— */
@@ -1315,13 +1359,22 @@ h2 + .faq {
 .page > article > .byline,
 .page > article > p,
 .page > article > .note,
-.page > article > .trust-box {
-  max-width: 40rem;
-}
-
-.page > article > h2 {
-  margin-top: 40px;
-  margin-bottom: 14px;
+.page > article > .trust-box,
+.page > article > .quick-answer,
+.page > article > .takeaways,
+.page > article > .toc,
+.page > article > .subnav,
+.page > article > .steps,
+.page > article > .faq-list,
+.page > article > .sources,
+.page > article > .author-card,
+.page > article > .go-deeper,
+.page > article > .pager,
+.page > article > .card,
+.page > article > .offer,
+.page > article > ol,
+.page > article > ul {
+  max-width: none;
 }
 
 .page .hero { padding-top: 12px; }
@@ -1638,8 +1691,8 @@ article > h2:first-of-type { margin-top: 28px; }
   border: 0;
   border-top: 1px solid var(--line);
   border-radius: 0;
-  padding: 16px 0 8px;
-  margin: 8px 0 20px;
+  padding: 20px 0 4px;
+  margin: 0;
 }
 
 .takeaways h2,
@@ -1667,13 +1720,17 @@ article > h2:first-of-type { margin-top: 28px; }
 .toc {
   background: none;
   border-radius: 0;
-  padding: 0 0 8px;
-  margin: 0 0 28px;
+  padding: 18px 0 8px;
+  margin: 8px 0 12px;
+  border-top: 1px solid var(--line);
 }
 
 .toc ol {
   margin: 0;
   padding-left: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .toc a {
@@ -1688,9 +1745,9 @@ article > h2:first-of-type { margin-top: 28px; }
   background: none;
   border-radius: 0;
   border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--line);
-  padding: 16px 0;
-  margin: 0 0 20px;
+  border-bottom: 0;
+  padding: 18px 0 8px;
+  margin: 0;
 }
 
 .quick-answer p {
@@ -1706,6 +1763,11 @@ article h2 + .quick-answer {
 
 article h2 + .quick-answer .qa-label {
   display: none;
+}
+
+/* Leftover per-heading QAs should read as body, not a second pull-quote */
+.page article h2 + p {
+  margin-top: 0;
 }
 
 .go-deeper {
