@@ -1831,3 +1831,116 @@ article h2 + .quick-answer .qa-label {
     transition: none !important;
   }
 }
+
+/* === hub + CTA redesign (ox-alpha + simon) === */
+/* Append-only luxury for the money CTA: comparison card + offer upgrade. Uses existing tokens. */
+
+.compare-card {
+  --card-bg: color-mix(in srgb, var(--accent) 6%, var(--bg));
+  background: var(--card-bg);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 28px);
+  margin: 32px 0;
+  box-shadow: var(--shadow-md, 0 8px 30px rgba(0,0,0,0.06));
+}
+.compare-card .compare-title {
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--ink, var(--text));
+}
+.compare-card .compare-sub {
+  color: var(--muted);
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  max-width: 34rem;
+}
+.compare-card ul.compare-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: grid;
+  gap: 8px;
+}
+.compare-card ul.compare-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: var(--ink-2, var(--text));
+}
+.compare-card ul.compare-list li::before {
+  content: "✓";
+  color: var(--accent);
+  font-weight: 700;
+  flex: 0 0 auto;
+}
+.compare-card .compare-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.compare-card .btn {
+  margin: 0;
+  background: var(--accent);
+  color: #fffdf8;
+  font-size: 1rem;
+  padding: 12px 22px;
+}
+.compare-card .btn:hover { background: var(--accent-hover); color: #fffdf8; }
+.compare-card .fine {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.offer.offer-card {
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: 16px;
+  padding: clamp(22px, 4vw, 30px);
+  background: var(--card-bg, transparent);
+  margin: 32px 0;
+  box-shadow: var(--shadow-md, 0 8px 30px rgba(0,0,0,0.06));
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 18px 0 0;
+}
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.pillar-card:hover { border-color: var(--accent); }
+.pillar-card .pillar-num { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.pillar-card h3 { margin: 0; font-size: 1rem; }
+.pillar-card p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.pillar-card a { color: var(--text); font-weight: 600; text-decoration: none; }
+.pillar-card a:hover { color: var(--accent); }
+
+@media (min-width: 640px) {
+  .pillar-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) {
+  .pillar-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+/* === 18+ age gate (restored from legacy shell, re-skinned to TrustCraft) === */
+#agegate{position:fixed;inset:0;background:rgba(18,16,20,.96);display:flex;align-items:center;justify-content:center;z-index:999}
+#agegate .box{max-width:420px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px;text-align:center;color:var(--text)}
+#agegate .box h2{margin:0 0 10px;color:var(--text)}
+#agegate .box p{color:var(--muted);margin:0 0 16px}
+.age-btn{background:var(--accent);color:#fffdf8;border:0;padding:12px 28px;border-radius:10px;font-size:1rem;cursor:pointer;margin:6px}
+.age-btn:hover{background:var(--accent-hover)}
+.age-btn.leave{background:var(--line);color:var(--text)}

@@ -7,9 +7,16 @@
 <meta name="description" content="All Date Safely Guide pages: cancel Tinder Gold, delete a Tinder account, cancel Bumble, fake profiles, and dating scam checklists.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://www.datesafelyguide.com/sitemap.html">
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
+<div id="agegate" role="dialog" aria-modal="true" aria-labelledby="agegate-title"><div class="box">
+<h2 id="agegate-title">18+ Content</h2>
+<p>This site covers adult dating services and may contain links to partner offers. You must be 18 or older to continue.</p>
+<button class="age-btn" onclick="confirmAge()">I am 18 or older</button>
+<button class="age-btn leave" onclick="location.href='https://www.google.com'">Leave</button>
+</div></div>
+
 <header class="site-header">
   <nav class="pill-nav" aria-label="Primary">
     <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span> Date Safely<span class="brand-sub">Guide</span></a>
@@ -59,5 +66,8 @@
     </ul>
   </article>
 </main>
+<script>
+(function(){try{if(localStorage.getItem('ageOk')==='1'){document.getElementById('agegate').style.display='none';}}catch(e){}window.confirmAge=function(){try{localStorage.setItem('ageOk','1');}catch(e){}document.getElementById('agegate').style.display='none';};})();
+</script>
 </body>
 </html>

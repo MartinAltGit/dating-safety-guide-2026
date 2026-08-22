@@ -102,7 +102,12 @@ async function main() {
     } else {
       check(`${site}/${p} agegate intact`, html.includes('agegate'));
       check(`${site}/${p} /go CTA present`, html.includes('/go?src='));
-      check(`${site}/${p} ref-passthrough snippet`, html.includes('querySelectorAll'));
+      // ref-passthrough lives in site.js (loaded defer) rather than an inline
+      // per-page script. Verify BOTH the loader is present and site.js has the
+      // /go?src= ref-folding logic.
+      check(`${site}/${p} ref-passthrough loader`, html.includes('site.js') || html.includes('querySelectorAll'));
+      fs.readFileSync(path.join(SITE_DIR, 'site.js'), 'utf8');
+      check(`${site} site.js ref-folding logic`, fs.existsSync(path.join(SITE_DIR, 'site.js')) && fs.readFileSync(path.join(SITE_DIR, 'site.js'), 'utf8').includes('/go?src='));
     }
   }
 

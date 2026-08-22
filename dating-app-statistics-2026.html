@@ -62,14 +62,21 @@
 
 <!-- Fonts -->
 <!-- Styles -->
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=16">
 
 <!-- Analytics -->
 <script>window.va=window.va||function(){(va.q=va.q||[]).push(arguments)};</script>
 <script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
 <script defer src="site.js?v=5"></script>
 </head>
-<body>
+<body class="has-sticky"
+<div id="agegate" role="dialog" aria-modal="true" aria-labelledby="agegate-title"><div class="box">
+<h2 id="agegate-title">18+ Content</h2>
+<p>This site covers adult dating services and may contain links to partner offers. You must be 18 or older to continue.</p>
+<button class="age-btn" onclick="confirmAge()">I am 18 or older</button>
+<button class="age-btn leave" onclick="location.href='https://www.google.com'">Leave</button>
+</div></div>
+
 
 <header class="site-header">
   <input type="checkbox" id="nav-open" class="nav-check">
@@ -327,5 +334,11 @@
 </footer>
 
 
+<script>
+(function(){try{if(localStorage.getItem('ageOk')==='1'){document.getElementById('agegate').style.display='none';}}catch(e){}window.confirmAge=function(){try{localStorage.setItem('ageOk','1');}catch(e){}document.getElementById('agegate').style.display='none';};})();
+</script>
+<div class="sticky-cta">
+  <a class="btn" href="/go?src=sticky-cta" rel="sponsored nofollow noopener" target="_blank">Compare dating sites near you <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
 </body>
 </html>

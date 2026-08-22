@@ -40,12 +40,19 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HowTo","name":"How to spot a fake dating profile","step":[{"@type":"HowToStep","position":1,"name":"Reverse image search the photos","text":"Google Images or TinEye. A hit under another name is enough. A miss proves nothing for AI-generated faces."},{"@type":"HowToStep","position":2,"name":"Read the bio and chat for scripts","text":"Generic lines, love in a week, always-on replies, details that slip."},{"@type":"HowToStep","position":3,"name":"Refuse the off-app rush","text":"WhatsApp, Telegram, or a “glitchy app” in the first days is a tell."},{"@type":"HowToStep","position":4,"name":"Demand live video on the app","text":"Wave a hand across the face or hold up an object you name. Pre-recorded clips do not count."}],"image":"https://www.datesafelyguide.com/images/fake-profiles.jpg"}
 </script>
-<link rel="stylesheet" href="styles.css?v=14">
+<link rel="stylesheet" href="styles.css?v=16">
 <script>window.va=window.va||function(){(va.q=va.q||[]).push(arguments)};</script>
 <script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
 <script defer src="site.js?v=5"></script>
 </head>
-<body>
+<body class="has-sticky"
+<div id="agegate" role="dialog" aria-modal="true" aria-labelledby="agegate-title"><div class="box">
+<h2 id="agegate-title">18+ Content</h2>
+<p>This site covers adult dating services and may contain links to partner offers. You must be 18 or older to continue.</p>
+<button class="age-btn" onclick="confirmAge()">I am 18 or older</button>
+<button class="age-btn leave" onclick="location.href='https://www.google.com'">Leave</button>
+</div></div>
+
 <header class="site-header">
   <input type="checkbox" id="nav-open" class="nav-check">
   <label for="nav-open" class="nav-scrim" aria-hidden="true"></label>
@@ -212,5 +219,11 @@
 </footer>
 
 
+<script>
+(function(){try{if(localStorage.getItem('ageOk')==='1'){document.getElementById('agegate').style.display='none';}}catch(e){}window.confirmAge=function(){try{localStorage.setItem('ageOk','1');}catch(e){}document.getElementById('agegate').style.display='none';};})();
+</script>
+<div class="sticky-cta">
+  <a class="btn" href="/go?src=sticky-cta" rel="sponsored nofollow noopener" target="_blank">Compare dating sites near you <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
 </body>
 </html>
