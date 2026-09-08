@@ -3,9 +3,9 @@
     var m = location.search.match(/[?&]ref=([a-zA-Z0-9_-]{1,40})/);
     if (m) {
       var ref = m[1];
-      document.querySelectorAll('a[href^="/go?src="]').forEach(function (a) {
+      document.querySelectorAll('a[href^="/go?src="], a[href^="compare.html?src="]').forEach(function (a) {
         if (a.getAttribute("href").indexOf("ref=") !== -1) return;
-        a.href += "&ref=" + encodeURIComponent(ref);
+        a.href += (a.getAttribute("href").indexOf("?") >= 0 ? "&" : "?") + "ref=" + encodeURIComponent(ref);
       });
     }
   } catch (e) {}
