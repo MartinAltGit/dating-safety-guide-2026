@@ -193,12 +193,14 @@
     document.getElementById('agegate').style.display = 'none';
   };
 
-  var CAM_BASE = 'https://t.frtayb.com/163898/3664/0?target=videouploads&po=6533&aff_sub5=SF_006OG000004lmDN';
+  var CAM_VIDEO = 'https://t.frtayb.com/163898/3664/0?target=videouploads&po=6533&aff_sub5=SF_006OG000004lmDN';
+  var CAM_POSTS = 'https://t.frtayb.com/163898/3664/0?target=posts&po=6533&aff_sub5=SF_006OG000004lmDN';
   var form = document.getElementById('cam-form');
   var ok = document.getElementById('cam-ok');
   var btn = document.getElementById('cam-submit');
   var params = new URLSearchParams(location.search);
   var inbound = (params.get('src') || 'yt-cam').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 40) || 'yt-cam';
+  var social = /^(reddit|forum|quora|social|post)/i.test(inbound);
 
   function uuid() {
     try {
@@ -212,7 +214,8 @@
   }
 
   function buildUrl() {
-    return CAM_BASE + '&aff_sub2=' + encodeURIComponent(inbound) + '&aff_sub=' + encodeURIComponent(uuid());
+    var base = social ? CAM_POSTS : CAM_VIDEO;
+    return base + '&aff_sub2=' + encodeURIComponent(inbound) + '&aff_sub=' + encodeURIComponent(uuid());
   }
 
   function sync() {
