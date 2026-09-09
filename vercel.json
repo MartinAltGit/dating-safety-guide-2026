@@ -20,7 +20,19 @@
     { "source": "/cancel/pricing.html", "destination": "/pricing.html", "permanent": true },
     { "source": "/cancel/faq.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
     { "source": "/cancel/stop-charges.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/cancel/badoo.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true }
+    { "source": "/cancel/badoo.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
+    { "source": "/romance-scams", "destination": "/romance-scams.html", "permanent": true },
+    { "source": "/romance-scams/", "destination": "/romance-scams.html", "permanent": true },
+    { "source": "/romance-scam-scripts", "destination": "/romance-scam-scripts.html", "permanent": true },
+    { "source": "/romance-scam-scripts/", "destination": "/romance-scam-scripts.html", "permanent": true },
+    { "source": "/is-online-dating-safe", "destination": "/is-online-dating-safe.html", "permanent": true },
+    { "source": "/is-online-dating-safe/", "destination": "/is-online-dating-safe.html", "permanent": true },
+    { "source": "/video-chat-safety", "destination": "/video-chat-safety.html", "permanent": true },
+    { "source": "/video-chat-safety/", "destination": "/video-chat-safety.html", "permanent": true },
+    { "source": "/pig-butchering-scam", "destination": "/pig-butchering-scam.html", "permanent": true },
+    { "source": "/pig-butchering-scam/", "destination": "/pig-butchering-scam.html", "permanent": true },
+    { "source": "/romance-scam-red-flags-checklist", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true },
+    { "source": "/romance-scam-red-flags-checklist/", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true }
   ],
   "headers": [
     {
