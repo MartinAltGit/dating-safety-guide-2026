@@ -302,6 +302,56 @@
       "source": "/report-romance-scam/",
       "destination": "/how-to-report-dating-scam.html",
       "permanent": true
+    },
+    {
+      "source": "/what-is-sextortion",
+      "destination": "/what-is-sextortion.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-sextortion/",
+      "destination": "/what-is-sextortion.html",
+      "permanent": true
+    },
+    {
+      "source": "/sextortion",
+      "destination": "/what-is-sextortion.html",
+      "permanent": true
+    },
+    {
+      "source": "/sextortion/",
+      "destination": "/what-is-sextortion.html",
+      "permanent": true
+    },
+    {
+      "source": "/sextortion-help",
+      "destination": "/sextortion-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/sextortion-help/",
+      "destination": "/sextortion-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-blackmail",
+      "destination": "/sextortion-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-blackmail/",
+      "destination": "/sextortion-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/webcam-blackmail",
+      "destination": "/what-is-sextortion.html",
+      "permanent": true
+    },
+    {
+      "source": "/webcam-blackmail/",
+      "destination": "/what-is-sextortion.html",
+      "permanent": true
     }
   ],
   "headers": [
