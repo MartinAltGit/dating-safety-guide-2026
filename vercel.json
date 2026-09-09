@@ -1,49 +1,258 @@
 {
   "rewrites": [
-    { "source": "/safety/:path*", "destination": "/:path*" },
-    { "source": "/safety", "destination": "/index.html" },
-    { "source": "/go", "destination": "/api/go" },
-    { "source": "/pb", "destination": "/api/pb" }
+    {
+      "source": "/safety/:path*",
+      "destination": "/:path*"
+    },
+    {
+      "source": "/safety",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/go",
+      "destination": "/api/go"
+    },
+    {
+      "source": "/pb",
+      "destination": "/api/pb"
+    }
   ],
   "redirects": [
-    { "source": "/favicon-32x32.png", "destination": "/favicon-32.png", "permanent": true },
-    { "source": "/favicon-16x16.png", "destination": "/favicon-32.png", "permanent": true },
-    { "source": "/favicon.ico", "destination": "/favicon.svg", "permanent": false },
-    { "source": "/og-image.png", "destination": "/og-image.jpg", "permanent": true },
-    { "source": "/cancel", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/cancel/", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/cancel/index.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/cancel/tinder.html", "destination": "/how-to-cancel-tinder.html", "permanent": true },
-    { "source": "/cancel/bumble.html", "destination": "/how-to-cancel-bumble.html", "permanent": true },
-    { "source": "/cancel/hinge.html", "destination": "/how-to-cancel-hinge.html", "permanent": true },
-    { "source": "/cancel/refund.html", "destination": "/refund.html", "permanent": true },
-    { "source": "/cancel/pricing.html", "destination": "/pricing.html", "permanent": true },
-    { "source": "/cancel/faq.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/cancel/stop-charges.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/cancel/badoo.html", "destination": "/how-to-cancel-dating-apps.html", "permanent": true },
-    { "source": "/romance-scams", "destination": "/romance-scams.html", "permanent": true },
-    { "source": "/romance-scams/", "destination": "/romance-scams.html", "permanent": true },
-    { "source": "/romance-scam-scripts", "destination": "/romance-scam-scripts.html", "permanent": true },
-    { "source": "/romance-scam-scripts/", "destination": "/romance-scam-scripts.html", "permanent": true },
-    { "source": "/is-online-dating-safe", "destination": "/is-online-dating-safe.html", "permanent": true },
-    { "source": "/is-online-dating-safe/", "destination": "/is-online-dating-safe.html", "permanent": true },
-    { "source": "/video-chat-safety", "destination": "/video-chat-safety.html", "permanent": true },
-    { "source": "/video-chat-safety/", "destination": "/video-chat-safety.html", "permanent": true },
-    { "source": "/pig-butchering-scam", "destination": "/pig-butchering-scam.html", "permanent": true },
-    { "source": "/pig-butchering-scam/", "destination": "/pig-butchering-scam.html", "permanent": true },
-    { "source": "/romance-scam-red-flags-checklist", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true },
-    { "source": "/romance-scam-red-flags-checklist/", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true },
-    { "source": "/dating-red-flags", "destination": "/dating-red-flags.html", "permanent": true },
-    { "source": "/dating-red-flags/", "destination": "/dating-red-flags.html", "permanent": true },
-    { "source": "/online-dating-scams", "destination": "/online-dating-scams.html", "permanent": true },
-    { "source": "/online-dating-scams/", "destination": "/online-dating-scams.html", "permanent": true },
-    { "source": "/what-is-a-romance-scam", "destination": "/what-is-a-romance-scam.html", "permanent": true },
-    { "source": "/what-is-a-romance-scam/", "destination": "/what-is-a-romance-scam.html", "permanent": true }
+    {
+      "source": "/favicon-32x32.png",
+      "destination": "/favicon-32.png",
+      "permanent": true
+    },
+    {
+      "source": "/favicon-16x16.png",
+      "destination": "/favicon-32.png",
+      "permanent": true
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/favicon.svg",
+      "permanent": false
+    },
+    {
+      "source": "/og-image.png",
+      "destination": "/og-image.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/cancel",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/index.html",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/tinder.html",
+      "destination": "/how-to-cancel-tinder.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/bumble.html",
+      "destination": "/how-to-cancel-bumble.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/hinge.html",
+      "destination": "/how-to-cancel-hinge.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/refund.html",
+      "destination": "/refund.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/pricing.html",
+      "destination": "/pricing.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/faq.html",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/stop-charges.html",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel/badoo.html",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scams",
+      "destination": "/romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scams/",
+      "destination": "/romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scam-scripts",
+      "destination": "/romance-scam-scripts.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scam-scripts/",
+      "destination": "/romance-scam-scripts.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-online-dating-safe",
+      "destination": "/is-online-dating-safe.html",
+      "permanent": true
+    },
+    {
+      "source": "/is-online-dating-safe/",
+      "destination": "/is-online-dating-safe.html",
+      "permanent": true
+    },
+    {
+      "source": "/video-chat-safety",
+      "destination": "/video-chat-safety.html",
+      "permanent": true
+    },
+    {
+      "source": "/video-chat-safety/",
+      "destination": "/video-chat-safety.html",
+      "permanent": true
+    },
+    {
+      "source": "/pig-butchering-scam",
+      "destination": "/pig-butchering-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/pig-butchering-scam/",
+      "destination": "/pig-butchering-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scam-red-flags-checklist",
+      "destination": "/romance-scam-red-flags-checklist.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scam-red-flags-checklist/",
+      "destination": "/romance-scam-red-flags-checklist.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-red-flags",
+      "destination": "/dating-red-flags.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-red-flags/",
+      "destination": "/dating-red-flags.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-dating-scams",
+      "destination": "/online-dating-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-dating-scams/",
+      "destination": "/online-dating-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-romance-scam",
+      "destination": "/what-is-a-romance-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-a-romance-scam/",
+      "destination": "/what-is-a-romance-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-scams",
+      "destination": "/online-dating-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-scams/",
+      "destination": "/online-dating-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-fraud",
+      "destination": "/romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-fraud/",
+      "destination": "/romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-are-romance-scams",
+      "destination": "/what-is-a-romance-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-are-romance-scams/",
+      "destination": "/what-is-a-romance-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-pig-butchering",
+      "destination": "/pig-butchering-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-pig-butchering/",
+      "destination": "/pig-butchering-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel-dating-apps",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/cancel-dating-apps/",
+      "destination": "/how-to-cancel-dating-apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/relationship-scams",
+      "destination": "/relationship-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/relationship-scams/",
+      "destination": "/relationship-scams.html",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)\\.(css|js|svg|png|jpg|jpeg|webp|webmanifest)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
     }
   ]
 }
