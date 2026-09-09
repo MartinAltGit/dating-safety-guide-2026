@@ -272,6 +272,36 @@
       "source": "/how-to-avoid-romance-scams/",
       "destination": "/romance-scams.html",
       "permanent": true
+    },
+    {
+      "source": "/dating-and-romance-scams",
+      "destination": "/dating-and-romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-and-romance-scams/",
+      "destination": "/dating-and-romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-dating-safety",
+      "destination": "/is-online-dating-safe.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-dating-safety/",
+      "destination": "/is-online-dating-safe.html",
+      "permanent": true
+    },
+    {
+      "source": "/report-romance-scam",
+      "destination": "/how-to-report-dating-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/report-romance-scam/",
+      "destination": "/how-to-report-dating-scam.html",
+      "permanent": true
     }
   ],
   "headers": [
