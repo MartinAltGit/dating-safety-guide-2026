@@ -242,6 +242,36 @@
       "source": "/relationship-scams/",
       "destination": "/relationship-scams.html",
       "permanent": true
+    },
+    {
+      "source": "/romance-scam-examples",
+      "destination": "/romance-scam-examples.html",
+      "permanent": true
+    },
+    {
+      "source": "/romance-scam-examples/",
+      "destination": "/romance-scam-examples.html",
+      "permanent": true
+    },
+    {
+      "source": "/signs-of-romance-scams",
+      "destination": "/romance-scam-red-flags-checklist.html",
+      "permanent": true
+    },
+    {
+      "source": "/signs-of-romance-scams/",
+      "destination": "/romance-scam-red-flags-checklist.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-avoid-romance-scams",
+      "destination": "/romance-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-avoid-romance-scams/",
+      "destination": "/romance-scams.html",
+      "permanent": true
     }
   ],
   "headers": [
