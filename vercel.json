@@ -442,6 +442,36 @@
       "source": "/dating-website-scams/",
       "destination": "/dating-app-scams.html",
       "permanent": true
+    },
+    {
+      "source": "/get-money-back-from-scam",
+      "destination": "/get-money-back-from-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/get-money-back-from-scam/",
+      "destination": "/get-money-back-from-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-money-back-from-scam",
+      "destination": "/get-money-back-from-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-money-back-from-scam/",
+      "destination": "/get-money-back-from-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/scam-recovery",
+      "destination": "/get-money-back-from-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/scam-recovery/",
+      "destination": "/get-money-back-from-scam.html",
+      "permanent": true
     }
   ],
   "headers": [
