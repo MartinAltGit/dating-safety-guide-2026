@@ -472,6 +472,46 @@
       "source": "/scam-recovery/",
       "destination": "/get-money-back-from-scam.html",
       "permanent": true
+    },
+    {
+      "source": "/scam-phone-numbers",
+      "destination": "/scam-phone-numbers.html",
+      "permanent": true
+    },
+    {
+      "source": "/scam-phone-numbers/",
+      "destination": "/scam-phone-numbers.html",
+      "permanent": true
+    },
+    {
+      "source": "/scam-text-messages",
+      "destination": "/scam-text-messages.html",
+      "permanent": true
+    },
+    {
+      "source": "/scam-text-messages/",
+      "destination": "/scam-text-messages.html",
+      "permanent": true
+    },
+    {
+      "source": "/sms-scams",
+      "destination": "/scam-text-messages.html",
+      "permanent": true
+    },
+    {
+      "source": "/sms-scams/",
+      "destination": "/scam-text-messages.html",
+      "permanent": true
+    },
+    {
+      "source": "/text-scams",
+      "destination": "/scam-text-messages.html",
+      "permanent": true
+    },
+    {
+      "source": "/text-scams/",
+      "destination": "/scam-text-messages.html",
+      "permanent": true
     }
   ],
   "headers": [
