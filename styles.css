@@ -785,3 +785,127 @@ main.page.wrap { max-width: 42rem; padding-bottom: 80px; }
   .compare-hero { padding-top: 24px; }
   .compare-hero h1 { font-size: 2rem; }
 }
+
+/* ——— Handbook article extras (definition / scam hubs) ——— */
+
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.crumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--muted);
+}
+.crumbs li:not(:last-child)::after {
+  content: "/";
+  color: var(--line);
+  margin-right: 6px;
+}
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--accent); }
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+.article-meta a { color: var(--ink-2); text-decoration: none; }
+.article-meta a:hover { color: var(--accent); }
+.article-meta time { font-variant-numeric: tabular-nums; }
+
+.quick-answer {
+  border-top: 1px solid var(--ink);
+  border-bottom: 0.5px solid var(--line);
+  padding: 16px 0;
+  margin: 0 0 20px;
+}
+.quick-answer .qa-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.quick-answer p { margin: 0; color: var(--ink); }
+
+.takeaways {
+  border-top: 0.5px solid var(--line);
+  padding: 16px 0 8px;
+  margin: 8px 0 20px;
+}
+.takeaways h2,
+.toc h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.takeaways ul { margin: 0; padding-left: 1.15em; }
+.takeaways li { margin: 6px 0; color: var(--ink); }
+
+.toc { padding: 0 0 8px; margin: 0 0 28px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.toc a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.toc a:hover { color: var(--accent); }
+
+.tight {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 24px;
+}
+.tight li {
+  margin: 0;
+  padding: 12px 0;
+  border-top: 0.5px solid var(--line);
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+.tight li:first-child { border-top: 0; }
+
+.note {
+  margin: 20px 0;
+  padding: 16px 0;
+  border-top: 0.5px solid var(--line);
+  border-bottom: 0.5px solid var(--line);
+}
+.note h3 { margin: 0 0 8px; font-size: 1.05rem; }
+
+.linkcard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: inherit;
+}
+.linkcard:hover { text-decoration: none; }
+.linkcard:hover strong { color: var(--accent); }
+.linkcard strong { font-size: 1.02rem; }
+.linkcard span { color: var(--muted); font-size: 0.88rem; }
+
+.author-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 36px 0 8px;
+  padding: 16px 0 0;
+  border-top: 0.5px solid var(--line);
+}
+.author-card .mark { margin-top: 2px; }
+.author-card p { margin: 4px 0 0; font-size: 0.9rem; }
+.author-card h3 { font-size: 0.95rem; margin: 0; }

@@ -352,6 +352,36 @@
       "source": "/webcam-blackmail/",
       "destination": "/what-is-sextortion.html",
       "permanent": true
+    },
+    {
+      "source": "/what-is-catfishing",
+      "destination": "/what-is-catfishing.html",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-catfishing/",
+      "destination": "/what-is-catfishing.html",
+      "permanent": true
+    },
+    {
+      "source": "/catfishing",
+      "destination": "/what-is-catfishing.html",
+      "permanent": true
+    },
+    {
+      "source": "/catfishing/",
+      "destination": "/what-is-catfishing.html",
+      "permanent": true
+    },
+    {
+      "source": "/catfishing-scam",
+      "destination": "/catfishing-scam.html",
+      "permanent": true
+    },
+    {
+      "source": "/catfishing-scam/",
+      "destination": "/catfishing-scam.html",
+      "permanent": true
     }
   ],
   "headers": [

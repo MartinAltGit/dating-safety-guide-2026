@@ -233,4 +233,16 @@
     <priority>0.8</priority>
     <image:image><image:loc>https://www.datesafelyguide.com/images/safety-checklist.jpg</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://www.datesafelyguide.com/what-is-catfishing.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.datesafelyguide.com/catfishing-scam.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
