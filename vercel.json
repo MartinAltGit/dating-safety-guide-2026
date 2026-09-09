@@ -32,7 +32,11 @@
     { "source": "/pig-butchering-scam", "destination": "/pig-butchering-scam.html", "permanent": true },
     { "source": "/pig-butchering-scam/", "destination": "/pig-butchering-scam.html", "permanent": true },
     { "source": "/romance-scam-red-flags-checklist", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true },
-    { "source": "/romance-scam-red-flags-checklist/", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true }
+    { "source": "/romance-scam-red-flags-checklist/", "destination": "/romance-scam-red-flags-checklist.html", "permanent": true },
+    { "source": "/dating-red-flags", "destination": "/dating-red-flags.html", "permanent": true },
+    { "source": "/dating-red-flags/", "destination": "/dating-red-flags.html", "permanent": true },
+    { "source": "/online-dating-scams", "destination": "/online-dating-scams.html", "permanent": true },
+    { "source": "/online-dating-scams/", "destination": "/online-dating-scams.html", "permanent": true }
   ],
   "headers": [
     {
