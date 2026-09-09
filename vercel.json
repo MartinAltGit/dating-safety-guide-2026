@@ -422,6 +422,26 @@
       "source": "/military-dating-scams/",
       "destination": "/military-romance-scams.html",
       "permanent": true
+    },
+    {
+      "source": "/dating-app-scams",
+      "destination": "/dating-app-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-app-scams/",
+      "destination": "/dating-app-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-website-scams",
+      "destination": "/dating-app-scams.html",
+      "permanent": true
+    },
+    {
+      "source": "/dating-website-scams/",
+      "destination": "/dating-app-scams.html",
+      "permanent": true
     }
   ],
   "headers": [
