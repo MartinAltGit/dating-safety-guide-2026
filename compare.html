@@ -244,6 +244,12 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!ok.checked) { return; }
+    var goal = (form.querySelector('input[name="goal"]:checked') || {}).value || 'casual';
+    // Live video chat -> cam lander (never dating /go). Other goals use /go (now Cam smartlink).
+    if (goal === 'live') {
+      window.location.href = 'cam.html?src=' + encodeURIComponent(src.value);
+      return;
+    }
     window.location.href = '/go?c=1&src=' + encodeURIComponent(src.value);
   });
 })();
